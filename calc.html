@@ -29,15 +29,40 @@
           } 
           
         </style>
+        <script>
+            
+
+            let a = "harish";
+            a = "manmeet";
+            a = "priyanka";
+
+            const b = "harish";
+
+            console.log("This is " + a);
+            console.error("This is error");
+            console.info("this is info");
+
+
+            let html = "<h1>This is heading</h1>";
+            html += "<p>this is paragraph</p>";
+            document.write(html);
+            
+            
+
+            function fillText() {
+                
+            }
+        </script>
     </head>
     <body>
+         
         <div class="box">
         
-            <input class="textbox" type="text" >
+            <input type="text" id="calcText" class="textbox"  >
        
          <div class="bt1">
-            <button>%</button>
-            <button>CE</button>
+            <button onclick="document.getElementById('calcText').value = '%'">%</button>
+            <button >CE</button>
             <button>C</button>
             <button>&#x232b</button>
             
