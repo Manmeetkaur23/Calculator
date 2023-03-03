@@ -49,8 +49,9 @@
             
             
 
-            function fillText() {
-                
+            function fillText(obj) {
+                let thisValue = obj.innerText;
+                document.getElementById('calcText').value = thisValue;
             }
         </script>
     </head>
@@ -61,9 +62,9 @@
             <input type="text" id="calcText" class="textbox"  >
        
          <div class="bt1">
-            <button onclick="document.getElementById('calcText').value = '%'">%</button>
-            <button >CE</button>
-            <button>C</button>
+            <button onclick="fillText(this)">%</button>
+            <button onclick="fillText(this)">CE</button>
+            <button onclick="fillText(this)">C</button>
             <button>&#x232b</button>
             
             <button>7</button>
